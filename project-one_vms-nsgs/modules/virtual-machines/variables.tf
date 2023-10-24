@@ -40,12 +40,13 @@ variable "network_security_group_rules" {
 }
 
 variable "number_vms" {
-  type = number
+  type        = number
   description = "This defines the number of virtual machines to be deployed"
-  default = 2
+  default     = 2
 }
 
 variable "vm_size" {
-  type = string
+  type        = string
   description = "This defines the size of the virtual machine"
+  default     = "Standard_DS2_v2"
 }

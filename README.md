@@ -1,6 +1,6 @@
 # Terraform Mini-Projects
 
-Welcome to my Terraform Mini-Projects Compilation repository! This repository serves as a collection of mini-projects that demonstrate my Terraform skills, with a focus on deploying infrastructure in Microsoft Azure.
+This repository serves as a collection of mini-projects that demonstrate my Terraform skills, with a focus on deploying infrastructure in Microsoft Azure.
 
 ## About
 

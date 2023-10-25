@@ -34,7 +34,7 @@ variable "vm_size" {
   default     = "Standard_F2"
 }
 
-variable "azurerm_availability_set_required" {
+variable "availability_set_required" {
   type = bool
   description = "This defines whether an availability set is required (recommended)"
   default = false

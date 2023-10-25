@@ -31,7 +31,7 @@ resource "azurerm_network_interface" "appinterface" {
 }
 
 resource "azurerm_availability_set" "appset" {
-  count                        = var.azurerm_availability_set_required ? 1 : 0
+  count                        = var.availability_set_required ? 1 : 0
   name                         = "app-set"
   location                     = var.location
   resource_group_name          = var.resource_group_name
@@ -49,7 +49,7 @@ resource "azurerm_linux_virtual_machine" "linux-vm" {
   location            = var.location
   size                = var.vm_size
   admin_username      = "adminuser"
-  availability_set_id = var.azurerm_availability_set_required ? azurerm_availability_set.appset.id : null
+  availability_set_id = var.availability_set_required ? azurerm_availability_set.appset.id : null
   network_interface_ids = [
     azurerm_network_interface.appinterface.id
   ]

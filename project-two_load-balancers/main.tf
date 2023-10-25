@@ -36,6 +36,7 @@ module "vm-module" {
   address_space                = module.networking-module.virtual_network_address_space
   network_security_group_rules = module.networking-module.network_security_group_rules
   number_vms                   = 2
+  availability_set_required    = true
 }
 
 # Implementation of Load Balancer
